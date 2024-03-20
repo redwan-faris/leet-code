@@ -1,6 +1,6 @@
 # LeetCode Progress in C++
 
-This repository documents my journey through solving LeetCode problems using C++. Each problem's solution is demonstrated within a `main.cpp` file.
+This repository documents my journey through solving LeetCode problems using C++. Each problem's solution is demonstrated within a `main.cpp` file. Please note that not all solved problems are added to this repository yet. I plan to update it with more solutions progressively.
 
 ## Repository Structure
 
@@ -8,7 +8,9 @@ This repository documents my journey through solving LeetCode problems using C++
 
 ## Progress
 
-This section tracks the number of problems I've tackled. The list will be updated regularly to reflect my latest work.
+This section tracks the number of problems I've tackled. The list will be updated regularly to reflect my latest work and will be supplemented with additional problems over time.
+
+Note : there is some problems is missing I will add them later
 
 - Total Problems Attempted: 59
 
@@ -18,7 +20,7 @@ This section tracks the number of problems I've tackled. The list will be update
 
 ## Updating the Repository
 
-Whenever I start working on a new problem, I update the `main.cpp` with the new solution. This way, the repository stays current with my latest progress.
+Whenever I start working on a new problem or decide to add previously solved problems, I update the `main.cpp` with the new solutions. This way, the repository will gradually encompass more of my LeetCode journey.
 
 ## Contact
 

@@ -9,16 +9,16 @@ int countPairs(vector<int> &nums, int target)
 
     while (left < right)
     {
-        if (nums[left] + nums[right] > target)
+        if (nums[left] + nums[right] < target)
         {
 
             count += right - left;
-            right--;
+            left++;
         }
         else
         {
 
-            left++;
+            right--;
         }
     }
 

@@ -31,6 +31,6 @@ int main()
             cin >> arr[i];
         }
         cout << maximizeSum(arr, k) << endl;
-    }
+        }
     return 0;
 }

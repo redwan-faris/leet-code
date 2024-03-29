@@ -4,32 +4,31 @@ using namespace std;
 
 long long countSubarrays(vector<int> &nums, int k)
 {
-
-    int maxNum = -1;
-    int count = 0;
-    int result = 0;
-    for (int i = 0; i < nums.size(); i++)
+    class Solution
     {
-        maxNum = max(nums[i], maxNum);
-    }
-    int i = 0;
-    int j = 0;
-    while (j < nums.size())
-    {
-        if (nums[j] == maxNum)
-            count++;
-        if (count >= k)
-            count = count + (j - i + 1);
-        while (count >= k && i <= j)
+    public:
+        long long countSubarrays(vector<int> &nums, int k)
         {
-            if (nums[i] == maxNum)
-                count--;
-            i++;
+            long long int max_num = *max_element(nums.begin(), nums.end()), count = 0;
+            long long int left = 0, right = 0, ans = 0;
+            while (right < nums.size())
+            {
+                if (nums[right] == max_num)
+                    count++;
+
+                while (count >= k)
+                {
+                    if (nums[left] == max_num)
+                        count--;
+                    left++;
+                    ans += nums.size() - right;
+                }
+                right++;
+            }
+
+            return ans;
         }
-        result = max(count, result);
-        j++;
-    }
-    return result;
+    };
 }
 
 int main()

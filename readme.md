@@ -12,7 +12,7 @@ This section tracks the number of problems I've tackled. The list will be update
 
 Note : there is some problems is missing I will add them later
 
-- Total Problems Attempted: 73
+- Total Problems Attempted: 81
 
 ## How to Use This Repository
 
